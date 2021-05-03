@@ -1,0 +1,12 @@
+docker.io/apache/nifi:latest
+docker.io/httpd:latest
+docker.io/jboss/wildfly:latest
+docker.io/mongo:latest
+docker.io/nginx:latest
+docker.io/postgres:latest
+docker.io/registry:latest
+registry.access.redhat.com/ubi7/nodejs-14:latest
+registry.access.redhat.com/ubi7/ubi-init:latest
+registry.access.redhat.com/ubi7/ubi:latest
+registry.access.redhat.com/ubi7/ubi-minimal:latest
+registry.access.redhat.com/ubi8/openjdk-8:latest

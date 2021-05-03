@@ -1,0 +1,6 @@
+ubi-7
+ubi-7-rhah
+ubi-7-server-devtools-rpms
+ubi-7-server-extras-rpms
+ubi-7-server-optional-rpms
+ubi-server-rhscl-7-rpms
