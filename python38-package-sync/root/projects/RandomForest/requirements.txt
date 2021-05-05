@@ -1,0 +1,22 @@
+# common
+pip
+pyinstaller
+setuptools
+wheel
+
+# project specific
+cx_Oracle
+descartes
+fiona
+#gdal
+geopandas
+geopy
+matplotlib
+numpy
+pandas
+psycopg2-binary
+pyproj
+#rtree
+scikit-learn
+scipy
+shapely

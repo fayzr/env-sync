@@ -4,7 +4,7 @@ podman build -t python38-package-sync .
 # run
 podman run \
 --name python38-package-sync-sync \
---volume /export/rhel7:/export \
---volume ./root/requirements.txt:/requirements.txt \
+--volume /export/python38:/export \
+--volume ./root/projects:/projects \
 --rm \
 localhost/python38-package-sync

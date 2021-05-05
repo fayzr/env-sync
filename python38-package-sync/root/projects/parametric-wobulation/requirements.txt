@@ -1,0 +1,29 @@
+# common
+pip
+pyinstaller
+setuptools
+wheel
+
+# project specific
+argparse
+bokeh
+cx_Oracle
+dash
+descartes
+fiona
+flask
+#gdal
+geopandas
+geopy
+graphviz
+matplotlib
+numpy
+pandas
+plotly
+psycopg2-binary
+pyproj
+#rtree
+scikit-learn
+scipy
+shapely
+tkcalendar
