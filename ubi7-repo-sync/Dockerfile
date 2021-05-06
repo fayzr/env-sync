@@ -8,7 +8,7 @@ iputils \
 yum-utils \
 createrepo
 
-COPY root/usr/local/bin/repo-sync.bash /usr/local/bin/
-RUN chmod +x /usr/local/bin/repo-sync.bash
+COPY root/usr/local/bin/ubi7-repo-sync.bash /usr/local/bin/
+RUN chmod +x /usr/local/bin/ubi7-repo-sync.bash
 
-CMD ["repo-sync.bash"]
+CMD ["ubi7-repo-sync.bash"]
