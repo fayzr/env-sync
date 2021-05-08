@@ -8,7 +8,7 @@ iputils \
 yum-utils \
 createrepo
 
-COPY root/usr/local/bin/repo-sync.bash /usr/local/bin/
-RUN chmod +x /usr/local/bin/repo-sync.bash
+COPY root/usr/local/bin/rhel7-thirdparty-repo-sync /usr/local/bin/
+RUN chmod +x /usr/local/bin/rhel7-thirdparty-repo-sync
 
-CMD ["repo-sync.bash"]
+CMD ["rhel7-thirdparty-repo-sync"]
