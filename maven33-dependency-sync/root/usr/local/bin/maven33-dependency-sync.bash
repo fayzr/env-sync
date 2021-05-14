@@ -1,9 +1,9 @@
 #!/bin/bash
 
-source /opt/rh/rh-nodejs14/enable
+source /opt/rh/rh-maven33/enable
 
 PROJECT_DIR="/projects"
-DOWNLOAD_DIR="/export"
+EXPORT_DIR="/export"
 
 if [ ! -z ${PROXY} ]
 then
@@ -20,7 +20,7 @@ fi
 
 for PROJECT in `ls ${PROJECT_DIR}`
 do
-	REQUIREMENTS_FILE="${PROJECT_DIR}/${PROJECT}/requirements.txt"
+	REQUIREMENTS_FILE="${PROJECT_DIR}/${PROJECT}/pom.xml"
 
 	if [ ! -f ${REQUIREMENTS_FILE} ]
 	then
@@ -30,8 +30,8 @@ do
 
         echo "[${PROJECT}]" && \
         echo -e && \
-	mkdir -p ${DOWNLOAD_DIR}/${PROJECT} && \
-	cd ${DOWNLOAD_DIR}/${PROJECT} && \
-	npm version  && \
+	mkdir -p ${EXPORT_DIR}/${PROJECT} && \
+	cd ${EXPORT_DIR}/${PROJECT} && \
+	mvn -f ${REQUIREMENTS_FILE} -Dmaven.repo.local=. -U de.qaware.maven:go-offline-maven-plugin:resolve-dependencies && \
 	echo -e
 done

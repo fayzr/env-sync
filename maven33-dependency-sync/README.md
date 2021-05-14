@@ -1,10 +1,10 @@
 # build
-podman build -t nodejs14-package-sync .
+podman build -t maven33-dependency-sync .
 
 # run
 podman run \
---name nodejs14-package-sync-sync \
---volume /export/nodejs14:/export \
+--name maven33-dependency-sync \
+--volume /export/maven33:/export \
 --volume ./root/projects:/projects \
 --rm \
-localhost/nodejs14-package-sync
+localhost/maven33-dependency-sync

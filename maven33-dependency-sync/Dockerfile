@@ -8,7 +8,7 @@ RUN yum install \
 iputils \
 rh-maven33
 
-COPY root/usr/local/bin/nodejs14-package-sync.bash /usr/local/bin/
-RUN chmod +x /usr/local/bin/nodejs14-package-sync.bash
+COPY root/usr/local/bin/* /usr/local/bin/
+RUN chmod +x /usr/local/bin/*
 
-CMD ["nodejs14-package-sync.bash"]
+CMD ["maven33-dependency-sync.bash"]
