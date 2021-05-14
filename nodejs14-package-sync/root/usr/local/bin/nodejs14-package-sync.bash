@@ -1,7 +1,5 @@
 #!/bin/bash
 
-source /opt/rh/rh-nodejs14/enable
-
 PROJECT_DIR="/projects"
 DOWNLOAD_DIR="/export"
 
@@ -32,6 +30,10 @@ do
         echo -e && \
 	mkdir -p ${DOWNLOAD_DIR}/${PROJECT} && \
 	cd ${DOWNLOAD_DIR}/${PROJECT} && \
-	npm version  && \
+	scl enable rh-nodejs14 'npm install npm -g' && \
+	scl enable rh-nodejs14 'npm install n -g' && \
+	scl enable rh-nodejs14 'n latest' && \
+	npm init -y && \
+	npm install npm && \
 	echo -e
 done
