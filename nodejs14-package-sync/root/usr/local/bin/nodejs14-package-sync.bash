@@ -18,12 +18,12 @@ fi
 
 for PROJECT in `ls ${PROJECT_DIR}`
 do
-	REQUIREMENTS_FILE="${PROJECT_DIR}/${PROJECT}/requirements.txt"
+	REQUIREMENTS_FILE="${PROJECT_DIR}/${PROJECT}/package.json"
 
 	if [ ! -f ${REQUIREMENTS_FILE} ]
 	then
 		echo "[ERROR] Requirements file (${REQUIREMENTS_FILE}) is missing"
-		return
+		continue
 	fi
 
         echo "[${PROJECT}]" && \

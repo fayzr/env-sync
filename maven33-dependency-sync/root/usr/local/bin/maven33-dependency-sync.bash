@@ -25,7 +25,7 @@ do
 	if [ ! -f ${REQUIREMENTS_FILE} ]
 	then
 		echo "[ERROR] Requirements file (${REQUIREMENTS_FILE}) is missing"
-		return
+		continue
 	fi
 
         echo "[${PROJECT}]" && \
