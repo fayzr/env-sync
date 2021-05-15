@@ -8,7 +8,7 @@ RUN yum install \
 iputils \
 rh-python38
 
-COPY root/usr/local/bin/python38-package-sync.bash /usr/local/bin/
-RUN chmod +x /usr/local/bin/python38-package-sync.bash
+COPY root/usr/local/bin/* /usr/local/bin/
+RUN chmod +x /usr/local/bin/*
 
 CMD ["python38-package-sync.bash"]

@@ -8,7 +8,7 @@ RUN yum install \
 iputils \
 podman
 
-COPY root/usr/local/bin/docker-image-sync.bash /usr/local/bin/
-RUN chmod +x /usr/local/bin/docker-image-sync.bash
+COPY root/usr/local/bin/* /usr/local/bin/
+RUN chmod +x /usr/local/bin/*
 
 CMD ["docker-image-sync.bash"]
