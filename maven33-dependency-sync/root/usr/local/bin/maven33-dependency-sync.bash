@@ -12,9 +12,9 @@ then
         export HTTPS_PROXY="${PROXY}"
 fi
 
-if [ ! -d ${DOWNLOAD_DIR} ]
+if [ ! -d ${EXPORT_DIR} ]
 then
-	echo "[ERROR] Repository directory (${DOWNLOAD_DIR}) is missing"
+	echo "[ERROR] Export directory (${EXPORT_DIR}) is missing"
 	exit
 fi
 

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 PROJECT_DIR="/projects"
-DOWNLOAD_DIR="/export"
+EXPORT_DIR="/export"
 
 if [ ! -z ${PROXY} ]
 then
@@ -10,16 +10,16 @@ then
         export HTTPS_PROXY="${PROXY}"
 fi
 
-if [ ! -d ${DOWNLOAD_DIR} ]
+if [ ! -d ${EXPORT_DIR} ]
 then
-	echo "[ERROR] Repository directory (${DOWNLOAD_DIR}) is missing"
+	echo "[ERROR] Export directory (${EXPORT_DIR}) is missing"
 	exit
 fi
 
 for PROJECT in `ls ${PROJECT_DIR}`
 do
 	REQUIREMENTS_FILE="${PROJECT_DIR}/${PROJECT}/requirements.txt"
-	PROJECT_FILE="${DOWNLOAD_DIR}/${PROJECT}.tar"
+	PROJECT_FILE="${EXPORT_DIR}/${PROJECT}.tar"
 
 	if [ ! -f ${REQUIREMENTS_FILE} ]
 	then

@@ -3,7 +3,7 @@
 source /opt/rh/rh-python38/enable
 
 PROJECT_DIR="/projects"
-DOWNLOAD_DIR="/export"
+EXPORT_DIR="/export"
 
 if [ ! -z ${PROXY} ]
 then
@@ -12,9 +12,9 @@ then
         export HTTPS_PROXY="${PROXY}"
 fi
 
-if [ ! -d ${DOWNLOAD_DIR} ]
+if [ ! -d ${EXPORT_DIR} ]
 then
-	echo "[ERROR] Repository directory (${DOWNLOAD_DIR}) is missing"
+	echo "[ERROR] Export directory (${EXPORT_DIR}) is missing"
 	exit
 fi
 
@@ -30,8 +30,8 @@ do
 
         echo "[${PROJECT}]" && \
         echo -e && \
-	mkdir -p ${DOWNLOAD_DIR}/${PROJECT} && \
-	cd ${DOWNLOAD_DIR}/${PROJECT} && \
+	mkdir -p ${EXPORT_DIR}/${PROJECT} && \
+	cd ${EXPORT_DIR}/${PROJECT} && \
 	python -m venv venv && \
 	source venv/bin/activate && \
 	pip --no-cache-dir install --upgrade pip && \
