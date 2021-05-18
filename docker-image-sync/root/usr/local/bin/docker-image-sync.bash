@@ -30,6 +30,6 @@ do
         echo -e && \
 	mkdir -p ${EXPORT_DIR}/${PROJECT} && \
 	cd ${EXPORT_DIR}/${PROJECT} && \
-	for IMAGE in $(grep -v "#" ${REQUIREMENTS_FILE}); do podman pull ${IMAGE}; done && \
+	for IMAGE in $(grep -v "#" ${REQUIREMENTS_FILE}); do podman pull ${IMAGE} --tls-verify=false; done && \
 	echo -e
 done

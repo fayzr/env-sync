@@ -8,5 +8,6 @@ podman run \
 --rm \
 --volume /var/tmp/containers:/var/lib/containers:rw \
 --volume /export/docker:/export \
+--volume ./root/.docker/config.json:/root/.docker/config.json \
 --volume ./root/projects:/projects \
 localhost/docker-image-sync
