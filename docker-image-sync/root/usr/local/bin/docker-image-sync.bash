@@ -19,7 +19,6 @@ fi
 for PROJECT in `ls ${PROJECT_DIR}`
 do
 	REQUIREMENTS_FILE="${PROJECT_DIR}/${PROJECT}/requirements.txt"
-	PROJECT_FILE="${EXPORT_DIR}/${PROJECT}.tar"
 
 	if [ ! -f ${REQUIREMENTS_FILE} ]
 	then
@@ -27,15 +26,10 @@ do
 		continue
 	fi
 
-	if [ -f ${PROJECT_FILE} ]
-	then
-		echo "[INFO] Project file (${PROJECT_FILE}) is present; deleting"
-		rm ${PROJECT_FILE}
-	fi
-
         echo "[${PROJECT}]" && \
         echo -e && \
+	mkdir -p ${EXPORT_DIR}/${PROJECT} && \
+	cd ${EXPORT_DIR}/${PROJECT} && \
 	for IMAGE in $(grep -v "#" ${REQUIREMENTS_FILE}); do podman pull ${IMAGE}; done && \
-	podman save $(podman images --format '{{.Repository}}:{{.Tag}}') -o ${PROJECT_FILE} && \
 	echo -e
 done
