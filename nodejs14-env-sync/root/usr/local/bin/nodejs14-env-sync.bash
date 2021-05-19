@@ -39,8 +39,8 @@ do
 	cd ${EXPORT_DIR}/${PROJECT} && \
 	cp -rp ${REQUIREMENTS_FILE} . && \
 	cp -rp ${ENGINES_FILE} . && \
-	n $(cat ${ENGINES_FILE}) && \
+	n $(head -1 ${ENGINES_FILE}) --quiet && \
 	echo -e && \
-	npm install && \
+	npm install --silent && \
 	echo -e
 done
