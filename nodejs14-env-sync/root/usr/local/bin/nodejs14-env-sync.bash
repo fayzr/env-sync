@@ -19,6 +19,7 @@ fi
 for PROJECT in `ls ${PROJECT_DIR}`
 do
 	REQUIREMENTS_FILE="${PROJECT_DIR}/${PROJECT}/package.json"
+	ENGINES_FILE="${PROJECT_DIR}/${PROJECT}/engines.conf"
 
 	if [ ! -f ${REQUIREMENTS_FILE} ]
 	then
@@ -26,18 +27,19 @@ do
 		continue
 	fi
 
+	if [ ! -f ${ENGINES_FILE} ]
+	then
+		echo "[ERROR] Engines file (${ENGINES_FILE}) is missing"
+		continue
+	fi
+
         echo "[${PROJECT}]" && \
         echo -e && \
 	mkdir -p ${EXPORT_DIR}/${PROJECT} && \
 	cd ${EXPORT_DIR}/${PROJECT} && \
-	#scl enable rh-nodejs14 'npm install npm -g' && \
-	#scl enable rh-nodejs14 'npm install n -g' && \
-	#scl enable rh-nodejs14 'n latest' && \
-	source /opt/rh/rh-nodejs14/enable && \
-	cp -rp ${PROJECT_DIR}/${PROJECT}/package.json . && \
-	echo Node version: $(node --version) && \
-	echo -e && \
-	echo NPM version: $(npm --version) && \
+	cp -rp ${REQUIREMENTS_FILE} . && \
+	cp -rp ${ENGINES_FILE} . && \
+	n $(cat ${ENGINES_FILE}) && \
 	echo -e && \
 	npm install && \
 	echo -e

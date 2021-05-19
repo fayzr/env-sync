@@ -8,6 +8,10 @@ RUN yum install \
 iputils \
 rh-nodejs14-npm
 
+RUN source /opt/rh/rh-nodejs14/enable && \
+npm install -g --prefix /usr/local n && \
+n latest
+
 COPY root/usr/local/bin/* /usr/local/bin/
 RUN chmod +x /usr/local/bin/*
 
