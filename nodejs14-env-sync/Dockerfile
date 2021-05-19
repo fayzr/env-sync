@@ -11,4 +11,4 @@ rh-nodejs14-npm
 COPY root/usr/local/bin/* /usr/local/bin/
 RUN chmod +x /usr/local/bin/*
 
-CMD ["nodejs14-package-sync.bash"]
+CMD ["nodejs14-env-sync.bash"]

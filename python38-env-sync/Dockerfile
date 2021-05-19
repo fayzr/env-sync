@@ -4,11 +4,11 @@ RUN yum install \
 --assumeyes \
 --disablerepo=* \
 --enablerepo=rhel-7-server-rpms \
---enablerepo=rhel-7-server-extras-rpms \
+--enablerepo=rhel-server-rhscl-7-rpms \
 iputils \
-podman
+rh-python38
 
 COPY root/usr/local/bin/* /usr/local/bin/
 RUN chmod +x /usr/local/bin/*
 
-CMD ["docker-image-sync.bash"]
+CMD ["python38-env-sync.bash"]

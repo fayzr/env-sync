@@ -1,13 +1,13 @@
 # build
-podman build -t docker-image-sync .
+podman build -t docker-env-sync .
 
 # run
 podman run \
---name docker-image-sync \
+--name docker-env-sync \
 --privileged \
 --rm \
 --volume /var/tmp/containers:/var/lib/containers:rw \
 --volume /export/docker:/export \
 --volume ./root/.docker/config.json:/root/.docker/config.json \
 --volume ./root/projects:/projects \
-localhost/docker-image-sync
+localhost/docker-env-sync

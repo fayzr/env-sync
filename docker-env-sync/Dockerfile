@@ -4,11 +4,11 @@ RUN yum install \
 --assumeyes \
 --disablerepo=* \
 --enablerepo=rhel-7-server-rpms \
---enablerepo=rhel-server-rhscl-7-rpms \
+--enablerepo=rhel-7-server-extras-rpms \
 iputils \
-rh-maven33
+podman
 
 COPY root/usr/local/bin/* /usr/local/bin/
 RUN chmod +x /usr/local/bin/*
 
-CMD ["maven33-dependency-sync.bash"]
+CMD ["docker-env-sync.bash"]
