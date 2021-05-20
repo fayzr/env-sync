@@ -1,0 +1,3 @@
+mongodb-org-4.0
+docker-ee-stable
+docker-ce-stable

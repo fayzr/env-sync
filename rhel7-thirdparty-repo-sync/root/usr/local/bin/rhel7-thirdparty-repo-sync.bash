@@ -13,6 +13,6 @@ do
 	echo -e && \
 	reposync --plugins --download_path=${EXPORT_DIR} --downloadcomps --delete --repoid=${REPO} && \
 	if [ -f ${EXPORT_DIR}/${REPO}/comps.xml ]; then createrepo ${EXPORT_DIR}/${REPO} --groupfile comps.xml && rm ${EXPORT_DIR}/${REPO}/comps.xml; \
-	else createrepo ${EXPORT_DIR}/${REPO} && rm ${EXPORT_DIR}/${REPO}/comps.xml; fi && \
+	else createrepo ${EXPORT_DIR}/${REPO}; fi && \
 	echo -e
 done

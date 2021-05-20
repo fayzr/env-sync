@@ -1,0 +1,167 @@
+[docker-ee-stable-17.06]
+name=Docker EE Stable 17.06 - $basearch
+baseurl=https://repos.mirantis.com/rhel/7/$basearch/stable-17.06/
+enabled=0
+gpgcheck=1
+gpgkey=https://repos.mirantis.com/rhel/gpg
+
+[docker-ee-stable-17.06-debuginfo]
+name=Docker EE Stable 17.06 - Debuginfo $basearch
+baseurl=https://repos.mirantis.com/rhel/7/debug-$basearch/stable-17.06/
+enabled=0
+gpgcheck=1
+gpgkey=https://repos.mirantis.com/rhel/gpg
+
+[docker-ee-stable-17.06-source]
+name=Docker EE Stable 17.06 - Sources
+baseurl=https://repos.mirantis.com/rhel/7/source/stable-17.06/
+enabled=0
+gpgcheck=1
+gpgkey=https://repos.mirantis.com/rhel/gpg
+
+[docker-ee-stable-17.03]
+name=Docker EE Stable 17.03 - $basearch
+baseurl=https://repos.mirantis.com/rhel/7/$basearch/stable-17.03/
+enabled=0
+gpgcheck=1
+gpgkey=https://repos.mirantis.com/rhel/gpg
+
+[docker-ee-stable-17.03-debuginfo]
+name=Docker EE Stable 17.03 - Debuginfo $basearch
+baseurl=https://repos.mirantis.com/rhel/7/debug-$basearch/stable-17.03/
+enabled=0
+gpgcheck=1
+gpgkey=https://repos.mirantis.com/rhel/gpg
+
+[docker-ee-stable-17.03-source]
+name=Docker EE Stable 17.03 - Sources
+baseurl=https://repos.mirantis.com/rhel/7/source/stable-17.03/
+enabled=0
+gpgcheck=1
+gpgkey=https://repos.mirantis.com/rhel/gpg
+
+[docker-ee-stable]
+name=Docker EE Stable - $basearch
+baseurl=https://repos.mirantis.com/rhel/7/$basearch/stable/
+enabled=1
+gpgcheck=1
+gpgkey=https://repos.mirantis.com/rhel/gpg
+
+[docker-ee-stable-debuginfo]
+name=Docker EE Stable - Debuginfo $basearch
+baseurl=https://repos.mirantis.com/rhel/7/debug-$basearch/stable/
+enabled=0
+gpgcheck=1
+gpgkey=https://repos.mirantis.com/rhel/gpg
+
+[docker-ee-stable-source]
+name=Docker EE Stable - Sources
+baseurl=https://repos.mirantis.com/rhel/7/source/stable/
+enabled=0
+gpgcheck=1
+gpgkey=https://repos.mirantis.com/rhel/gpg
+
+[docker-ee-test]
+name=Docker EE Test - $basearch
+baseurl=https://repos.mirantis.com/rhel/7/$basearch/test/
+enabled=0
+gpgcheck=1
+gpgkey=https://repos.mirantis.com/rhel/gpg
+
+[docker-ee-test-debuginfo]
+name=Docker EE Test - Debuginfo $basearch
+baseurl=https://repos.mirantis.com/rhel/7/debug-$basearch/test/
+enabled=0
+gpgcheck=1
+gpgkey=https://repos.mirantis.com/rhel/gpg
+
+[docker-ee-test-source]
+name=Docker EE Test - Sources
+baseurl=https://repos.mirantis.com/rhel/7/source/test/
+enabled=0
+gpgcheck=1
+gpgkey=https://repos.mirantis.com/rhel/gpg
+
+[docker-ee-test-17.03]
+name=Docker EE Test 17.03 - $basearch
+baseurl=https://repos.mirantis.com/rhel/7/$basearch/test-17.03/
+enabled=0
+gpgcheck=1
+gpgkey=https://repos.mirantis.com/rhel/gpg
+
+[docker-ee-test-17.03-debuginfo]
+name=Docker EE Test 17.03 - Debuginfo $basearch
+baseurl=https://repos.mirantis.com/rhel/7/debug-$basearch/test-17.03/
+enabled=0
+gpgcheck=1
+gpgkey=https://repos.mirantis.com/rhel/gpg
+
+[docker-ee-test-17.03-source]
+name=Docker EE Test 17.03 - Sources
+baseurl=https://repos.mirantis.com/rhel/7/source/test-17.03/
+enabled=0
+gpgcheck=1
+gpgkey=https://repos.mirantis.com/rhel/gpg
+
+[docker-ee-test-17.06]
+name=Docker EE Test 17.06 - $basearch
+baseurl=https://repos.mirantis.com/rhel/7/$basearch/test-17.06/
+enabled=0
+gpgcheck=1
+gpgkey=https://repos.mirantis.com/rhel/gpg
+
+[docker-ee-test-17.06-debuginfo]
+name=Docker EE Test 17.06 - Debuginfo $basearch
+baseurl=https://repos.mirantis.com/rhel/7/debug-$basearch/test-17.06/
+enabled=0
+gpgcheck=1
+gpgkey=https://repos.mirantis.com/rhel/gpg
+
+[docker-ee-test-17.06-source]
+name=Docker EE Test 17.06 - Sources
+baseurl=https://repos.mirantis.com/rhel/7/source/test-17.06/
+enabled=0
+gpgcheck=1
+gpgkey=https://repos.mirantis.com/rhel/gpg
+
+[docker-ee-test-18.03]
+name=Docker EE Test 18.03 - $basearch
+baseurl=https://repos.mirantis.com/rhel/7/$basearch/test-18.03/
+enabled=0
+gpgcheck=1
+gpgkey=https://repos.mirantis.com/rhel/gpg
+
+[docker-ee-stable-18.03]
+name=Docker EE Stable 18.03 - $basearch
+baseurl=https://repos.mirantis.com/rhel/7/$basearch/stable-18.03/
+enabled=0
+gpgcheck=1
+gpgkey=https://repos.mirantis.com/rhel/gpg
+
+[docker-ee-test-18.09]
+name=Docker EE Test 18.09 - $basearch
+baseurl=https://repos.mirantis.com/rhel/7/$basearch/test-18.09/
+enabled=0
+gpgcheck=1
+gpgkey=https://repos.mirantis.com/rhel/gpg
+
+[docker-ee-stable-18.09]
+name=Docker EE Stable 18.09 - $basearch
+baseurl=https://repos.mirantis.com/rhel/7/$basearch/stable-18.09/
+enabled=0
+gpgcheck=1
+gpgkey=https://repos.mirantis.com/rhel/gpg
+
+[docker-ee-test-19.03]
+name=Docker EE Test 19.03 - $basearch
+baseurl=https://repos.mirantis.com/rhel/7/$basearch/test-19.03/
+enabled=0
+gpgcheck=1
+gpgkey=https://repos.mirantis.com/rhel/gpg
+
+[docker-ee-stable-19.03]
+name=Docker EE Stable 19.03 - $basearch
+baseurl=https://repos.mirantis.com/rhel/7/$basearch/stable-19.03/
+enabled=0
+gpgcheck=1
+gpgkey=https://repos.mirantis.com/rhel/gpg
