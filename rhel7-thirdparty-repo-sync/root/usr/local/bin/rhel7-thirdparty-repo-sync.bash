@@ -3,24 +3,9 @@
 REPO_FILE="/requirements.txt"
 EXPORT_DIR="/export"
 
-if [ ! -z ${PROXY} ]
-then
-	echo "[INFO] Proxy variable (${PROXY}) is set"
-	export HTTP_PROXY="${PROXY}"
-	export HTTPS_PROXY="${PROXY}"
-fi
+if [ ! -f ${REPO_FILE} ]; then echo "[ERROR] Export file (${REPO_FILE}) is missing"; exit; fi
 
-if [ ! -f ${REPO_FILE} ]
-then
-	echo "[ERROR] Export file (${REPO_FILE}) is missing"
-	exit
-fi
-
-if [ ! -d ${EXPORT_DIR} ]
-then
-	echo "[ERROR] Repository directory (${EXPORT_DIR}) is missing"
-	exit
-fi
+if [ ! -d ${EXPORT_DIR} ]; then echo "[ERROR] Repository directory (${EXPORT_DIR}) is missing"; exit; fi
 
 for REPO in $(grep -v "#" ${REPO_FILE})
 do
