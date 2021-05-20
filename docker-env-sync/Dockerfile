@@ -1,10 +1,10 @@
-FROM registry.access.redhat.com/ubi7
+FROM registry.access.redhat.com/ubi8
 
 RUN yum install \
 --assumeyes \
 --disablerepo=* \
---enablerepo=rhel-7-server-rpms \
---enablerepo=rhel-7-server-extras-rpms \
+--enablerepo=rhel-8-for-x86_64-baseos-rpms \
+--enablerepo=rhel-8-for-x86_64-appstream-rpms \
 iputils \
 podman
 
