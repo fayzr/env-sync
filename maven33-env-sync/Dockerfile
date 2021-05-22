@@ -9,6 +9,7 @@ iputils \
 rh-maven33
 
 COPY root/usr/local/bin/* /usr/local/bin/
+
 RUN chmod +x /usr/local/bin/*
 
 CMD ["maven33-env-sync.bash"]

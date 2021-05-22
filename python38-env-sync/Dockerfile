@@ -9,6 +9,7 @@ iputils \
 rh-python38
 
 COPY root/usr/local/bin/* /usr/local/bin/
+
 RUN chmod +x /usr/local/bin/*
 
 CMD ["python38-env-sync.bash"]

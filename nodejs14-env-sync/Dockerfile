@@ -13,6 +13,7 @@ npm install -g --prefix /usr/local n && \
 n latest
 
 COPY root/usr/local/bin/* /usr/local/bin/
+
 RUN chmod +x /usr/local/bin/*
 
 CMD ["nodejs14-env-sync.bash"]
