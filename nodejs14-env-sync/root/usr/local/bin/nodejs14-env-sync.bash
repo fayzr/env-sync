@@ -18,6 +18,7 @@ do
 	cd ${EXPORT_DIR}/${PROJECT} && \
 	cp -rp ${REQUIREMENTS_FILE} . && \
 	cp -rp ${ENGINES_FILE} . && \
+	export N_NODE_MIRROR=http://192.168.0.11/artifactory/nodejs.org && \
 	n $(head -1 ${ENGINES_FILE}) --quiet && \
 	echo -e && \
 	npm install --silent && \

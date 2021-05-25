@@ -79,13 +79,11 @@
       <artifactId>maven-javadoc-plugin</artifactId>
       <version>3.2.0</version>
     </dependency>
-    <!--
     <dependency>
-      <groupId>org.postgresql</groupId>
-      <artifactId>postgresql</artifactId>
-      <version>42.2.13</version>
+      <groupId>com.oracle.database.jdbc</groupId>
+      <artifactId>ojdbc8</artifactId>
+      <version>19.3.0.0</version>
     </dependency>
-    -->
   </dependencies>
   <build>
     <plugins>
