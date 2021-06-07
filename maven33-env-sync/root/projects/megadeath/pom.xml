@@ -120,6 +120,10 @@
         <groupId>de.qaware.maven</groupId>
         <artifactId>go-offline-maven-plugin</artifactId>
         <version>1.2.5</version>
+        <configuration>
+          <dynamicDependencies>
+        </dynamicDependencies>
+        </configuration>
       </plugin>
       <!-- Project plugins -->
       <plugin>
