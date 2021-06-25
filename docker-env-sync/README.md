@@ -18,6 +18,6 @@ podman run \
 --volume /var/tmp/containers:/var/lib/containers:rw \
 --volume /export/docker:/export \
 --volume ./root/projects:/projects \
---volume ./root/.docker/config.json:/root/.docker/config.json \
+--volume ./root/.config/containers/registries.conf:/root/.config/containers/registries.conf \
 --rm \
 localhost/docker-env-sync
