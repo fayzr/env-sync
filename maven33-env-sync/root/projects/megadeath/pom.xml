@@ -90,11 +90,13 @@
       <artifactId>netty-all</artifactId>
       <version>4.1.22.Final</version>
     </dependency>
+    <!--
     <dependency>
       <groupId>com.oracle.jdbc</groupId>
       <artifactId>ojdbc7</artifactId>
       <version>12.1.0.2</version>
     </dependency>
+    -->
     <dependency>
       <groupId>log4j</groupId>
       <artifactId>log4j</artifactId>
