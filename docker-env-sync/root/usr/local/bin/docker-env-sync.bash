@@ -3,6 +3,7 @@
 PROJECT_DIR="/projects"
 EXPORT_DIR="/export"
 
+if [ ! -d ${PROJECT_DIR} ]; then echo "[ERROR] Project directory (${PROJECT_DIR}) is missing"; exit; fi
 if [ ! -d ${EXPORT_DIR} ]; then echo "[ERROR] Export directory (${EXPORT_DIR}) is missing"; exit; fi
 
 for PROJECT in `ls ${PROJECT_DIR}`
