@@ -10,7 +10,7 @@ do
 	REQUIREMENTS_FILE="${PROJECT_DIR}/${PROJECT}/requirements.txt"
 
         echo "[${PROJECT}]" && \
-	if [ ! -f ${REQUIREMENTS_FILE} ]; then echo -e; echo "[ERROR] Requirements file (${REQUIREMENTS_FILE}) is missing"; echo -e; continue; fi && \
+	if [ ! -f ${REQUIREMENTS_FILE} ]; then echo -e; echo "[ERROR] Requirements file (${REQUIREMENTS_FILE}) is missing"; echo -e; fi && \
         echo -e && \
 	mkdir -p ${EXPORT_DIR}/${PROJECT} && \
 	cd ${EXPORT_DIR}/${PROJECT} && \

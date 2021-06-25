@@ -15,5 +15,6 @@ podman run \
 --volume /export/node/nodejs14:/export \
 --volume ./root/projects:/projects \
 --volume ./root/.npmrc:/root/.npmrc \
+--volume ./root/.nrc:/root/.nrc \
 --rm \
 localhost/nodejs14-env-sync
