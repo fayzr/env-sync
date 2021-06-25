@@ -1,1 +1,1 @@
-export N_NODE_MIRROR=http://192.168.0.11/artifactory/nodejs.org
+export N_NODE_MIRROR="http://192.168.0.11/artifactory/nodejs.org"
