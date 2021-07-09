@@ -1,3 +1,5 @@
-mongodb-org-4.0
+mongodb-org-4.4.5
+mongodb-enterprise-4.0.9
+mongodb-enterprise-4.2.0
 docker-ee-stable
 docker-ce-stable
