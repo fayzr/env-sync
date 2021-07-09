@@ -1,3 +1,4 @@
 mongodb-org-4.0
 docker-ee-stable
 docker-ce-stable
+MongoDB Enterprise Edition (https://docs.mongodb.com/manual/tutorial/install-mongodb-enterprise-on-red-hat/)
