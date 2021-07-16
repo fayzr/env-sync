@@ -29,4 +29,5 @@ pyproj
 scikit-learn
 scipy
 shapely
+sklearn
 tkcalendar
