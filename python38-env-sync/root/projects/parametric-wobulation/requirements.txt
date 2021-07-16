@@ -16,10 +16,13 @@ flask
 geopandas
 geopy
 graphviz
+grpcio
+grpcio-tools
 matplotlib
 numpy
 pandas
 plotly
+protobuf
 psycopg2-binary
 pyproj
 #rtree
