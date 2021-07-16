@@ -5,6 +5,7 @@ docker.io/mongo:latest
 docker.io/nginx:latest
 docker.io/postgres:latest
 docker.io/registry:latest
+docker.io/apache/nifi:1.8.0
 registry.access.redhat.com/ubi7/nodejs-14:latest
 registry.access.redhat.com/ubi7/ubi-init:latest
 registry.access.redhat.com/ubi7/ubi:latest
